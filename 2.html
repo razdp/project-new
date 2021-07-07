@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Quick draw</title>
+    <style>
+        body {
+        background: url('images/background.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;s
+        background-size: cover;
+        -o-background-size: cover;
+      }
+      .back{
+        font-size: 20px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+      }
+      .steps{
+          font-size: 25px;
+          font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	  font-weight: bold;
+          color: white;
+          background-color: rgb(85, 38, 196);
+          text-align: center;
+          border-radius: 10px;
+
+      }
+      .steps-line{
+         font-size: 15px;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         color: white;
+      }
+      .Draw{
+        font-size: 27px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(0, 0, 0);
+      }
+      
+      .canvas{
+        width: 590px;
+        height: 450px;
+        border: 20px solid;
+	border-color: orange;
+        background-color: aliceblue;
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+      .choose{
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+        color:white;
+        background-color: rgb(85, 38, 196);
+        text-align: center;
+        border-radius: 10px;
+      }
+      .choose-cata{
+        font-size: 15px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	color: greenyellow;
+	border-color: greenyellow;
+        
+        
+      }
+      .confirm{
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+        color: black;
+        background-color: greenyellow;
+        text-align: center;
+        border-radius: 10px;
+      }
+      .clear{
+        font-size: 20px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+        color: white;
+        background-color: red;
+        text-align: center;
+        border-radius: 10px;
+      }
+    </style>
+    </head>
+    <body>
+      
+     <div class="container-fluid px-3 pt-5 mt-5">
+       <div class="row">
+         <div class="col-lg-3 pl-5">
+           <p class="back">
+           <span style="text-decoration: none; color: rgb(255, 255, 255); cursor:pointer;">
+            &larr; Back
+           </span>
+           </p>
+           <p class="steps py-2">Steps to play</p>
+           <p class="steps-line">
+            <img src="images/send1.png" width="15px" height="15px" >   
+            Choose one of the Labels provided on the right.<br>( For eg. Sun. Flower, Umbrella)</p>
+           <p class="steps-line">
+            <img src="images/send1.png" width="15px" height="15px" >   
+            Draw inside the given Canvas area.</p>
+           <p class="steps-line">
+            <img src="images/send1.png" width="15px" height="15px" > Press ‘Confirm Selection’.</p>
+           <p class="steps-line">
+            <img src="images/send1.png" width="15px" height="15px" > If you make a mistake in while drawing, press ‘Clear Selection’. </p> 
+           </div>
+           <div class="col-lg-4 canvas text-center ">
+            <p class="Draw">Draw Inside this Canvas</p>
+            <canvas  width="auto" height="370"></canvas> 
+           </div>
+           <div class="col-lg-4">
+             <p class="choose py-3">Choose from the Labels</p>
+             
+            <div class="row">
+              <div class="col mx-3 mt-3 choose-cata btn btn-outline-warning">Sun</div>
+            </div>
+            <div class="row">
+              <div class="col mx-3 mt-3 choose-cata btn btn-outline-warning">Flower</div>
+            </div>
+            <div class="row">
+              <div class="col mx-3 mt-3 choose-cata btn btn-outline-warning">Pencil</div>
+            </div>
+            <div class="row">
+              <div class="col mx-3 mt-3 choose-cata btn btn-outline-warning">Umbrella</div>
+            </div>
+            <div class="row">
+              <div class="col mx-3 mt-3 choose-cata btn btn-outline-warning">House</div>
+            </div>
+            <div class="row">
+              <div class="col mx-3 mt-3 choose-cata btn btn-outline-warning">Spoon</div>
+            </div>
+            
+          <p class="confirm py-3 mt-5" style="cursor: pointer;">Confirm Selection</p>
+          <p class="clear py-3 mt-3" style="cursor: pointer;">Clear Canvas</p>    
+     </div>
+     </div>
+      </div>
+    </body>
